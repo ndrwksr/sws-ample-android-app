@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">sw-sample</string>
+    <string name="get_state">Get State</string>
+    <string name="submit_state">Submit State</string>
+    <string name="splitter">Splitter</string>
+    <string name="get_splitter">Get Splitter</string>
+    <string name="original">Original:</string>
+    <string name="palindrome">Palindrome:</string>
+    <string name="reverse">Reverse:</string>
+    <string name="get_two_property_object">Get Two-Property Object</string>
+    <string name="prop1">Prop1:</string>
+    <string name="prop2">Prop2:</string>
+    <string name="crash">Crash</string>
+    <string name="submit_splitter">Submit Splitter</string>
+    <string name="state">State</string>
+</resources>
