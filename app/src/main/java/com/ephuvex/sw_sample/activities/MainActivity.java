@@ -59,8 +59,9 @@ public class MainActivity extends AppCompatActivity {
 	private EditText splitterEditText;
 	private Button getSplitterButton;
 	private Button submitSplitterButton;
-	private TextView splitStateText;
 	private TextView originalText;
+	private TextView splitStateText;
+	private TextView fifthCharText;
 	private TextView palindromeText;
 	private TextView reverseText;
 	private Button getTwoPropButton;
@@ -80,8 +81,9 @@ public class MainActivity extends AppCompatActivity {
 		splitterEditText = findViewById(R.id.splitterEditText);
 		getSplitterButton = findViewById(R.id.getSplitterButton);
 		submitSplitterButton = findViewById(R.id.submitSplitterButton);
-		splitStateText = findViewById(R.id.splitStateText);
 		originalText = findViewById(R.id.originalText);
+		splitStateText = findViewById(R.id.splitStateText);
+		fifthCharText = findViewById(R.id.fifthCharText);
 		palindromeText = findViewById(R.id.palindromeText);
 		reverseText = findViewById(R.id.reverseText);
 		getTwoPropButton = findViewById(R.id.getTwoPropButton);
@@ -229,7 +231,7 @@ public class MainActivity extends AppCompatActivity {
 				() -> crashRequest,
 				null,
 				null,
-				"Failed to crash web service!",
+				"Web service has crashed!",
 				null
 		);
 
@@ -373,6 +375,7 @@ public class MainActivity extends AppCompatActivity {
 
 						MainActivity.this.runOnUiThread(() -> {
 							originalText.setText(stringProperties.getOriginalString());
+							fifthCharText.setText(stringProperties.getFifthChar());
 							palindromeText.setText(Boolean.toString(stringProperties.getIsPalindrome()));
 							reverseText.setText(stringProperties.getReversed());
 						});
